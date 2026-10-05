@@ -19,15 +19,12 @@ public class LinkedListCycle {
 
         while (current != null) {
 
-            // Node already visited
             if (set.contains(current)) {
                 return true;
             }
-
-            // Store current node
+            
             set.add(current);
 
-            // Move to next node
             current = current.next;
         }
 
